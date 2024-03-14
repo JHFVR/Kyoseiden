@@ -12,6 +12,11 @@
 		764C7BC22BA38885003EDBF9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BC12BA38885003EDBF9 /* Item.swift */; };
 		764C7BC42BA38888003EDBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764C7BC32BA38888003EDBF9 /* Assets.xcassets */; };
 		764C7BC72BA38888003EDBF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764C7BC62BA38888003EDBF9 /* Preview Assets.xcassets */; };
+		764C7BCE2BA38A23003EDBF9 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BCD2BA38A23003EDBF9 /* UserPreferences.swift */; };
+		764C7BD02BA38A3B003EDBF9 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BCF2BA38A3B003EDBF9 /* Contact.swift */; };
+		764C7BD22BA38A5E003EDBF9 /* CallSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD12BA38A5E003EDBF9 /* CallSchedule.swift */; };
+		764C7BD42BA38A85003EDBF9 /* ScheduledCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD32BA38A85003EDBF9 /* ScheduledCall.swift */; };
+		764C7BD62BA38ABB003EDBF9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD52BA38ABB003EDBF9 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +26,11 @@
 		764C7BC12BA38885003EDBF9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		764C7BC32BA38888003EDBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764C7BC62BA38888003EDBF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		764C7BCD2BA38A23003EDBF9 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		764C7BCF2BA38A3B003EDBF9 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		764C7BD12BA38A5E003EDBF9 /* CallSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSchedule.swift; sourceTree = "<group>"; };
+		764C7BD32BA38A85003EDBF9 /* ScheduledCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledCall.swift; sourceTree = "<group>"; };
+		764C7BD52BA38ABB003EDBF9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,11 @@
 			children = (
 				764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */,
 				764C7BBF2BA38885003EDBF9 /* ContentView.swift */,
+				764C7BCD2BA38A23003EDBF9 /* UserPreferences.swift */,
+				764C7BD12BA38A5E003EDBF9 /* CallSchedule.swift */,
+				764C7BD52BA38ABB003EDBF9 /* Settings.swift */,
+				764C7BD32BA38A85003EDBF9 /* ScheduledCall.swift */,
+				764C7BCF2BA38A3B003EDBF9 /* Contact.swift */,
 				764C7BC12BA38885003EDBF9 /* Item.swift */,
 				764C7BC32BA38888003EDBF9 /* Assets.xcassets */,
 				764C7BC52BA38888003EDBF9 /* Preview Content */,
@@ -140,7 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				764C7BD42BA38A85003EDBF9 /* ScheduledCall.swift in Sources */,
 				764C7BC02BA38885003EDBF9 /* ContentView.swift in Sources */,
+				764C7BD62BA38ABB003EDBF9 /* Settings.swift in Sources */,
+				764C7BCE2BA38A23003EDBF9 /* UserPreferences.swift in Sources */,
+				764C7BD22BA38A5E003EDBF9 /* CallSchedule.swift in Sources */,
+				764C7BD02BA38A3B003EDBF9 /* Contact.swift in Sources */,
 				764C7BC22BA38885003EDBF9 /* Item.swift in Sources */,
 				764C7BBE2BA38885003EDBF9 /* KyoseidenApp.swift in Sources */,
 			);
