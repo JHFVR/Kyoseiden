@@ -27,6 +27,16 @@ struct KyoseidenApp: App {
         WindowGroup {
             ContentView()
         }
+        
+// Save for later to switch between initial setup and already set up users
+//        WindowGroup {
+//            if userIsLoggedIn {
+//                DashboardView()
+//            } else {
+//                LoginView()
+//            }
+//        }
         .modelContainer(sharedModelContainer)
     }
 }
+

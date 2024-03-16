@@ -18,6 +18,7 @@
 		764C7BD42BA38A85003EDBF9 /* ScheduledCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD32BA38A85003EDBF9 /* ScheduledCall.swift */; };
 		764C7BD62BA38ABB003EDBF9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD52BA38ABB003EDBF9 /* Settings.swift */; };
 		764C7BD82BA39501003EDBF9 /* ContactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD72BA39501003EDBF9 /* ContactsList.swift */; };
+		764C7BDA2BA4DCFE003EDBF9 /* CreateMockContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD92BA4DCFE003EDBF9 /* CreateMockContacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		764C7BD32BA38A85003EDBF9 /* ScheduledCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledCall.swift; sourceTree = "<group>"; };
 		764C7BD52BA38ABB003EDBF9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		764C7BD72BA39501003EDBF9 /* ContactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsList.swift; sourceTree = "<group>"; };
+		764C7BD92BA4DCFE003EDBF9 /* CreateMockContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMockContacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */,
 				764C7BBF2BA38885003EDBF9 /* ContentView.swift */,
 				764C7BD72BA39501003EDBF9 /* ContactsList.swift */,
+				764C7BDB2BA4DD0A003EDBF9 /* MockData */,
 				764C7BCD2BA38A23003EDBF9 /* UserPreferences.swift */,
 				764C7BD12BA38A5E003EDBF9 /* CallSchedule.swift */,
 				764C7BD52BA38ABB003EDBF9 /* Settings.swift */,
@@ -86,6 +89,14 @@
 				764C7BC62BA38888003EDBF9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		764C7BDB2BA4DD0A003EDBF9 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				764C7BD92BA4DCFE003EDBF9 /* CreateMockContacts.swift */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 				764C7BC02BA38885003EDBF9 /* ContentView.swift in Sources */,
 				764C7BD62BA38ABB003EDBF9 /* Settings.swift in Sources */,
 				764C7BCE2BA38A23003EDBF9 /* UserPreferences.swift in Sources */,
+				764C7BDA2BA4DCFE003EDBF9 /* CreateMockContacts.swift in Sources */,
 				764C7BD22BA38A5E003EDBF9 /* CallSchedule.swift in Sources */,
 				764C7BD02BA38A3B003EDBF9 /* Contact.swift in Sources */,
 				764C7BC22BA38885003EDBF9 /* Item.swift in Sources */,

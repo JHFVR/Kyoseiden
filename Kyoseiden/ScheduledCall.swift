@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftData
 
-class ScheduledCall {
+@Model
+final class ScheduledCall {
     let contact: Contact
     var callTime: Date
 

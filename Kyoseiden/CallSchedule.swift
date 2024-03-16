@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftData
 
-class CallSchedule {
+@Model
+final class CallSchedule {
     var scheduledCalls: [ScheduledCall]
 
     init(scheduledCalls: [ScheduledCall] = []) {

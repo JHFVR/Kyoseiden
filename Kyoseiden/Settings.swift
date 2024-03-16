@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftData
 
-class Settings {
+@Model
+final class Settings {
     var flashlightNotification: Bool
     var callReminder: Bool
 

@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftData
 
-class Contact {
+@Model
+final class Contact {
     let contactId: String
     let name: String
     let phoneNumber: String

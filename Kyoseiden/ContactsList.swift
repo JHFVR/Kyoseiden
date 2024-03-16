@@ -7,24 +7,7 @@
 
 import SwiftUI
 import Contacts
-
-func createMockContacts() -> [CNContact] {
-    var contacts = [CNContact]()
-    
-    let contact1 = CNMutableContact()
-    contact1.givenName = "John"
-    contact1.familyName = "Doe"
-    contact1.phoneNumbers = [CNLabeledValue(label: CNLabelPhoneNumberMobile, value: CNPhoneNumber(stringValue: "1234567890"))]
-    
-    let contact2 = CNMutableContact()
-    contact2.givenName = "Jane"
-    contact2.familyName = "Smith"
-    contact2.phoneNumbers = [CNLabeledValue(label: CNLabelPhoneNumberMobile, value: CNPhoneNumber(stringValue: "0987654321"))]
-    
-    contacts.append(contentsOf: [contact1, contact2])
-    
-    return contacts
-}
+import SwiftData
 
 struct ContactsList: View {
     @State private var contacts: [CNContact] = []

@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftData
 
-class UserPreferences {
+@Model
+final class UserPreferences {
     var selectedContacts: [Contact]
     var availableDays: [Int] // 0 for Sunday, 1 for Monday, etc.
     var startTime: Date // Store only the time component
