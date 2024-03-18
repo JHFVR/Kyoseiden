@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-final class Contact {
+final class selectedContact {
     let contactId: String
     let name: String
     let phoneNumber: String
