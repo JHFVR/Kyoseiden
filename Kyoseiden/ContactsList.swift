@@ -21,9 +21,9 @@ struct ContactsList: View {
                 }
             }
         }
-        .onAppear {
-            self.contacts = createMockContacts()
-        }
+//        .onAppear {
+//            self.contacts = createMockContacts()
+//        }
     }
 }
 

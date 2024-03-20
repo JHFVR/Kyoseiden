@@ -9,14 +9,14 @@ import Foundation
 import SwiftData
 
 @Model
-final class CallSchedule {
-    var scheduledCalls: [ScheduledCall]
+final class callSchedule {
+    var scheduledCalls: [scheduledCall]
 
-    init(scheduledCalls: [ScheduledCall] = []) {
+    init(scheduledCalls: [scheduledCall] = []) {
         self.scheduledCalls = scheduledCalls
     }
 
-    func generateSchedule(userPreferences: UserPreferences) {
+    func generateSchedule(userPreferences: userPreferences) {
         // Implementation for generating call schedule based on user preferences
     }
 

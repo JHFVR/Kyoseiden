@@ -4,59 +4,58 @@
 //
 //  Created by VON RUEDEN, Jonathan on 14.03.24.
 //
-
 import SwiftUI
-import SwiftData
 import Contacts
+import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    @State var contacts = [CNContact]()
+    
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+        NavigationView {
+            List(contacts, id: \.identifier) { contactDetail in
+                HStack(spacing: 10){
+                    Image("Rectangle 47")
+                        .resizable()
+                        .frame(width: 60, height: 60)
+                        .animation(.linear, value: 3)
+                    VStack(alignment: .leading, spacing: 10){
+                        Text("\(contactDetail.givenName) \(contactDetail.familyName)")
+                        Text("ID: \(contactDetail.identifier)") // Display the identifier
+                            .font(.footnote)
+                            .foregroundColor(.gray)
+                    }.multilineTextAlignment(.leading)
+                    Spacer()
+                    Image("Call")
+                        .resizable()
+                        .frame(width: 30, height: 30)
                 }
             }
-        } detail: {
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+            .transition(.slide)
+            .onAppear(perform: getContactList())
+            .navigationTitle("Contact List")
         }
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+// Preview Provider with mock data
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView(contacts: mockContacts())
+    }
+    
+    static func mockContacts() -> [CNContact] {
+        let contact1 = CNMutableContact()
+        contact1.givenName = "John"
+        contact1.familyName = "Doe"
+        // Simulate an identifier
+        // Note: In real usage, identifiers are assigned by the system when saving a contact.
+
+        let contact2 = CNMutableContact()
+        contact2.givenName = "Jane"
+        contact2.familyName = "Smith"
+        // Simulate an identifier
+
+        return [contact1 as CNContact, contact2 as CNContact] // Cast to CNContact
+    }
 }

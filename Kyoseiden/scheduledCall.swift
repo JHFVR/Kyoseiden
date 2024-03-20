@@ -9,11 +9,11 @@ import Foundation
 import SwiftData
 
 @Model
-final class ScheduledCall {
-    let contact: Contact
+final class scheduledCall {
+    let contact: userSelectedContacts
     var callTime: Date
 
-    init(contact: Contact, callTime: Date) {
+    init(contact: userSelectedContacts, callTime: Date) {
         self.contact = contact
         self.callTime = callTime
     }

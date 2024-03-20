@@ -12,7 +12,7 @@ import SwiftData
 struct KyoseidenApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            userSelectedContacts.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -25,7 +25,7 @@ struct KyoseidenApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            homeScreen()
         }
         
 // Save for later to switch between initial setup and already set up users

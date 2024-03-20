@@ -9,15 +9,15 @@ import Foundation
 import SwiftData
 
 @Model
-final class UserPreferences {
-    var selectedContacts: [Contact]
+final class userPreferences {
+    var userSelectedContacts: [userSelectedContacts]
     var availableDays: [Int] // 0 for Sunday, 1 for Monday, etc.
     var startTime: Date // Store only the time component
     var endTime: Date // Store only the time component
     var callFrequency: TimeInterval // In seconds, for simplicity
 
-    init(selectedContacts: [Contact], availableDays: [Int], startTime: Date, endTime: Date, callFrequency: TimeInterval) {
-        self.selectedContacts = selectedContacts
+    init(userSelectedContacts: [userSelectedContacts], availableDays: [Int], startTime: Date, endTime: Date, callFrequency: TimeInterval) {
+        self.userSelectedContacts = userSelectedContacts
         self.availableDays = availableDays
         self.startTime = startTime
         self.endTime = endTime

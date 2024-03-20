@@ -8,33 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		764C7BBE2BA38885003EDBF9 /* KyoseidenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */; };
-		764C7BC02BA38885003EDBF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BBF2BA38885003EDBF9 /* ContentView.swift */; };
 		764C7BC22BA38885003EDBF9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BC12BA38885003EDBF9 /* Item.swift */; };
 		764C7BC42BA38888003EDBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764C7BC32BA38888003EDBF9 /* Assets.xcassets */; };
 		764C7BC72BA38888003EDBF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764C7BC62BA38888003EDBF9 /* Preview Assets.xcassets */; };
-		764C7BCE2BA38A23003EDBF9 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BCD2BA38A23003EDBF9 /* UserPreferences.swift */; };
-		764C7BD02BA38A3B003EDBF9 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BCF2BA38A3B003EDBF9 /* Contact.swift */; };
-		764C7BD22BA38A5E003EDBF9 /* CallSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD12BA38A5E003EDBF9 /* CallSchedule.swift */; };
-		764C7BD42BA38A85003EDBF9 /* ScheduledCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD32BA38A85003EDBF9 /* ScheduledCall.swift */; };
-		764C7BD62BA38ABB003EDBF9 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD52BA38ABB003EDBF9 /* Settings.swift */; };
-		764C7BD82BA39501003EDBF9 /* ContactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD72BA39501003EDBF9 /* ContactsList.swift */; };
+		764C7BCE2BA38A23003EDBF9 /* userPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BCD2BA38A23003EDBF9 /* userPreferences.swift */; };
+		764C7BD02BA38A3B003EDBF9 /* userSelectedContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BCF2BA38A3B003EDBF9 /* userSelectedContacts.swift */; };
+		764C7BD22BA38A5E003EDBF9 /* callSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */; };
+		764C7BD42BA38A85003EDBF9 /* scheduledCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */; };
+		764C7BD62BA38ABB003EDBF9 /* userSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD52BA38ABB003EDBF9 /* userSettings.swift */; };
 		764C7BDA2BA4DCFE003EDBF9 /* CreateMockContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD92BA4DCFE003EDBF9 /* CreateMockContacts.swift */; };
+		76CA356F2BA828EB00B955B6 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA356E2BA828EB00B955B6 /* homeScreen.swift */; };
+		76CA35712BA82DDD00B955B6 /* editFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA35702BA82DDD00B955B6 /* editFriendList.swift */; };
+		76E87AF72BA83400008EB583 /* editSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E87AF62BA83400008EB583 /* editSchedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		764C7BBA2BA38885003EDBF9 /* Kyoseiden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyoseiden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyoseidenApp.swift; sourceTree = "<group>"; };
-		764C7BBF2BA38885003EDBF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		764C7BC12BA38885003EDBF9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		764C7BC32BA38888003EDBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764C7BC62BA38888003EDBF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		764C7BCD2BA38A23003EDBF9 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
-		764C7BCF2BA38A3B003EDBF9 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		764C7BD12BA38A5E003EDBF9 /* CallSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallSchedule.swift; sourceTree = "<group>"; };
-		764C7BD32BA38A85003EDBF9 /* ScheduledCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledCall.swift; sourceTree = "<group>"; };
-		764C7BD52BA38ABB003EDBF9 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		764C7BD72BA39501003EDBF9 /* ContactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsList.swift; sourceTree = "<group>"; };
+		764C7BCD2BA38A23003EDBF9 /* userPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPreferences.swift; sourceTree = "<group>"; };
+		764C7BCF2BA38A3B003EDBF9 /* userSelectedContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSelectedContacts.swift; sourceTree = "<group>"; };
+		764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = callSchedule.swift; sourceTree = "<group>"; };
+		764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduledCall.swift; sourceTree = "<group>"; };
+		764C7BD52BA38ABB003EDBF9 /* userSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSettings.swift; sourceTree = "<group>"; };
 		764C7BD92BA4DCFE003EDBF9 /* CreateMockContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMockContacts.swift; sourceTree = "<group>"; };
+		76CA35672BA635EC00B955B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		76CA356E2BA828EB00B955B6 /* homeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
+		76CA35702BA82DDD00B955B6 /* editFriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editFriendList.swift; sourceTree = "<group>"; };
+		76E87AF62BA83400008EB583 /* editSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editSchedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,15 +70,17 @@
 		764C7BBC2BA38885003EDBF9 /* Kyoseiden */ = {
 			isa = PBXGroup;
 			children = (
+				76CA35672BA635EC00B955B6 /* Info.plist */,
 				764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */,
-				764C7BBF2BA38885003EDBF9 /* ContentView.swift */,
-				764C7BD72BA39501003EDBF9 /* ContactsList.swift */,
+				76CA356E2BA828EB00B955B6 /* homeScreen.swift */,
+				76E87AF62BA83400008EB583 /* editSchedule.swift */,
+				76CA35702BA82DDD00B955B6 /* editFriendList.swift */,
 				764C7BDB2BA4DD0A003EDBF9 /* MockData */,
-				764C7BCD2BA38A23003EDBF9 /* UserPreferences.swift */,
-				764C7BD12BA38A5E003EDBF9 /* CallSchedule.swift */,
-				764C7BD52BA38ABB003EDBF9 /* Settings.swift */,
-				764C7BD32BA38A85003EDBF9 /* ScheduledCall.swift */,
-				764C7BCF2BA38A3B003EDBF9 /* Contact.swift */,
+				764C7BCD2BA38A23003EDBF9 /* userPreferences.swift */,
+				764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */,
+				764C7BD52BA38ABB003EDBF9 /* userSettings.swift */,
+				764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */,
+				764C7BCF2BA38A3B003EDBF9 /* userSelectedContacts.swift */,
 				764C7BC12BA38885003EDBF9 /* Item.swift */,
 				764C7BC32BA38888003EDBF9 /* Assets.xcassets */,
 				764C7BC52BA38888003EDBF9 /* Preview Content */,
@@ -169,16 +174,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764C7BD42BA38A85003EDBF9 /* ScheduledCall.swift in Sources */,
-				764C7BC02BA38885003EDBF9 /* ContentView.swift in Sources */,
-				764C7BD62BA38ABB003EDBF9 /* Settings.swift in Sources */,
-				764C7BCE2BA38A23003EDBF9 /* UserPreferences.swift in Sources */,
+				764C7BD42BA38A85003EDBF9 /* scheduledCall.swift in Sources */,
+				764C7BD62BA38ABB003EDBF9 /* userSettings.swift in Sources */,
+				764C7BCE2BA38A23003EDBF9 /* userPreferences.swift in Sources */,
 				764C7BDA2BA4DCFE003EDBF9 /* CreateMockContacts.swift in Sources */,
-				764C7BD22BA38A5E003EDBF9 /* CallSchedule.swift in Sources */,
-				764C7BD02BA38A3B003EDBF9 /* Contact.swift in Sources */,
+				76E87AF72BA83400008EB583 /* editSchedule.swift in Sources */,
+				76CA356F2BA828EB00B955B6 /* homeScreen.swift in Sources */,
+				76CA35712BA82DDD00B955B6 /* editFriendList.swift in Sources */,
+				764C7BD22BA38A5E003EDBF9 /* callSchedule.swift in Sources */,
+				764C7BD02BA38A3B003EDBF9 /* userSelectedContacts.swift in Sources */,
 				764C7BC22BA38885003EDBF9 /* Item.swift in Sources */,
 				764C7BBE2BA38885003EDBF9 /* KyoseidenApp.swift in Sources */,
-				764C7BD82BA39501003EDBF9 /* ContactsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +321,7 @@
 				DEVELOPMENT_TEAM = Q3Q2RT2YDY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kyoseiden/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +351,7 @@
 				DEVELOPMENT_TEAM = Q3Q2RT2YDY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kyoseiden/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
