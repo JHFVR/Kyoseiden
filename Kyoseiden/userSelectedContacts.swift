@@ -23,7 +23,10 @@ final class userSelectedContacts {
     let lastName: String
     var lastCalled: Date?
 
-    
+    func copy(with zone: NSZone? = nil) -> Any {
+        let copy = userSelectedContacts(contactId: self.contactId, firstName: self.firstName, lastName: self.lastName, lastCalled: self.lastCalled)
+        return copy
+    }
 }
 
 

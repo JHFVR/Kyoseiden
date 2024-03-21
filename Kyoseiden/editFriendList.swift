@@ -13,12 +13,14 @@ struct editFriendList: View {
     @State private var contacts = [CNContact]()
     @State private var searchText = ""
     @State private var selectedContacts: Set<String> = [] // Using contact identifier as the key
-    @State private var selectedNotYetSaved: [userSelectedContacts] = []
     
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) var dismiss
 
+    // i am running the copy of user data later on.appear.. so all initializes properly before
     @Query private var userSelectedContacts: [userSelectedContacts]
+    @State private var copySelectedNotYetSaved: [userSelectedContacts] = []
+    @State private var selectedNotYetSaved: [userSelectedContacts] = []
     
     // Added initializer to accept contacts
     init(contacts: [CNContact] = []) {
@@ -42,12 +44,9 @@ struct editFriendList: View {
                 ForEach(filteredContacts, id: \.identifier) { contact in
                     HStack {
                         Button(action: {
-                            if selectedContacts.contains(contact.identifier) {
-                                selectedContacts.remove(contact.identifier)
-                                
-                                if let index = selectedNotYetSaved.firstIndex(where: { $0.contactId == contact.identifier }) {
-                                    selectedNotYetSaved.remove(at: index)
-                                }
+                            if let index = selectedNotYetSaved.firstIndex(where: { $0.contactId == contact.identifier }) {
+                                // If found, remove the instance at the found index
+                                selectedNotYetSaved.remove(at: index)
                                 
                                 for contact in selectedNotYetSaved {
                                     if let lastCalled = contact.lastCalled {
@@ -57,7 +56,6 @@ struct editFriendList: View {
                                     }
                                 }
                             } else {
-                                selectedContacts.insert(contact.identifier)
                                 selectedNotYetSaved.append(Kyoseiden.userSelectedContacts(contactId: contact.identifier, firstName: contact.givenName, lastName: contact.familyName, lastCalled: Date()))
                                 
                                 for contact in selectedNotYetSaved {
@@ -69,7 +67,7 @@ struct editFriendList: View {
                                 }
                             }
                         }) {
-                            Image(systemName: selectedContacts.contains(contact.identifier) ? "checkmark.circle.fill" : "circle")
+                            Image(systemName: (selectedNotYetSaved.firstIndex(where: { $0.contactId == contact.identifier }) != nil) ? "checkmark.circle.fill" : "circle")
                                 .foregroundColor(.blue)
                         }
                         
@@ -87,25 +85,32 @@ struct editFriendList: View {
             .navigationTitle("Contact List")
             .toolbar {
                 Button("Save") {
-
-//                    for oneSelectedContact in userSelectedContacts {
-//                        if selectedNotYetSaved.contains(where: { $0.contactId == userSelectedContacts.contactId }) {
-//                            print("OK")
-//                        } else {
-//                            // If the contactId is not found in selectedNotYetSaved, delete the userSelectedContact
-//                            modelContext.delete(userSelectedContacts)
-//                        }
-//                    }
-
-                    for contact in selectedNotYetSaved {
-                        
+                    
+                    for userSelectedContact in userSelectedContacts {
+                        if !selectedNotYetSaved.contains(where: { $0.contactId == userSelectedContact.contactId }) {
+                            modelContext.delete(userSelectedContact)
+                        }
                     }
+                    
+                    for oneSelectedContact in selectedNotYetSaved {
+                        if !userSelectedContacts.contains(where: { $0.contactId == oneSelectedContact.contactId }) {
+                            modelContext.insert(oneSelectedContact)
+                        }
+                    }
+                    
                     print("Selected Contacts: ")
-                    dismiss()
+                    withAnimation {
+                        dismiss()
+                    }
                 }
             }
             .transition(.slide)
-            .onAppear(perform: getContactList)
+            .onAppear{
+                getContactList()
+                self.copySelectedNotYetSaved = self.userSelectedContacts
+                self.selectedNotYetSaved = self.copySelectedNotYetSaved.map { $0.copy() as! userSelectedContacts }
+
+            }
             .navigationTitle("Contact List")
         }
     }
