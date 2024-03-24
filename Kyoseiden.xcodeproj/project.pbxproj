@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760C08752BACBB3D00842842 /* contactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760C08742BACBB3D00842842 /* contactManager.swift */; };
 		764C7BBE2BA38885003EDBF9 /* KyoseidenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */; };
-		764C7BC22BA38885003EDBF9 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BC12BA38885003EDBF9 /* Item.swift */; };
 		764C7BC42BA38888003EDBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764C7BC32BA38888003EDBF9 /* Assets.xcassets */; };
 		764C7BC72BA38888003EDBF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764C7BC62BA38888003EDBF9 /* Preview Assets.xcassets */; };
 		764C7BCE2BA38A23003EDBF9 /* userPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BCD2BA38A23003EDBF9 /* userPreferences.swift */; };
@@ -16,16 +16,16 @@
 		764C7BD22BA38A5E003EDBF9 /* callSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */; };
 		764C7BD42BA38A85003EDBF9 /* scheduledCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */; };
 		764C7BD62BA38ABB003EDBF9 /* userSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD52BA38ABB003EDBF9 /* userSettings.swift */; };
-		764C7BDA2BA4DCFE003EDBF9 /* CreateMockContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD92BA4DCFE003EDBF9 /* CreateMockContacts.swift */; };
+		769B46ED2BAE110300069995 /* getContactImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B46EC2BAE110300069995 /* getContactImage.swift */; };
 		76CA356F2BA828EB00B955B6 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA356E2BA828EB00B955B6 /* homeScreen.swift */; };
 		76CA35712BA82DDD00B955B6 /* editFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA35702BA82DDD00B955B6 /* editFriendList.swift */; };
 		76E87AF72BA83400008EB583 /* editSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E87AF62BA83400008EB583 /* editSchedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760C08742BACBB3D00842842 /* contactManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactManager.swift; sourceTree = "<group>"; };
 		764C7BBA2BA38885003EDBF9 /* Kyoseiden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyoseiden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyoseidenApp.swift; sourceTree = "<group>"; };
-		764C7BC12BA38885003EDBF9 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		764C7BC32BA38888003EDBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764C7BC62BA38888003EDBF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		764C7BCD2BA38A23003EDBF9 /* userPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPreferences.swift; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 		764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = callSchedule.swift; sourceTree = "<group>"; };
 		764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduledCall.swift; sourceTree = "<group>"; };
 		764C7BD52BA38ABB003EDBF9 /* userSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSettings.swift; sourceTree = "<group>"; };
-		764C7BD92BA4DCFE003EDBF9 /* CreateMockContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMockContacts.swift; sourceTree = "<group>"; };
+		769B46EC2BAE110300069995 /* getContactImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getContactImage.swift; sourceTree = "<group>"; };
 		76CA35672BA635EC00B955B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		76CA356E2BA828EB00B955B6 /* homeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
 		76CA35702BA82DDD00B955B6 /* editFriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editFriendList.swift; sourceTree = "<group>"; };
@@ -51,6 +51,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		760C08762BACBC0A00842842 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				760C08742BACBB3D00842842 /* contactManager.swift */,
+				764C7BCD2BA38A23003EDBF9 /* userPreferences.swift */,
+				764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */,
+				764C7BD52BA38ABB003EDBF9 /* userSettings.swift */,
+				764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */,
+				764C7BCF2BA38A3B003EDBF9 /* userSelectedContacts.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		760C08772BACBC1A00842842 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76CA356E2BA828EB00B955B6 /* homeScreen.swift */,
+				76E87AF62BA83400008EB583 /* editSchedule.swift */,
+				76CA35702BA82DDD00B955B6 /* editFriendList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		764C7BB12BA38885003EDBF9 = {
 			isa = PBXGroup;
 			children = (
@@ -72,16 +95,9 @@
 			children = (
 				76CA35672BA635EC00B955B6 /* Info.plist */,
 				764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */,
-				76CA356E2BA828EB00B955B6 /* homeScreen.swift */,
-				76E87AF62BA83400008EB583 /* editSchedule.swift */,
-				76CA35702BA82DDD00B955B6 /* editFriendList.swift */,
-				764C7BDB2BA4DD0A003EDBF9 /* MockData */,
-				764C7BCD2BA38A23003EDBF9 /* userPreferences.swift */,
-				764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */,
-				764C7BD52BA38ABB003EDBF9 /* userSettings.swift */,
-				764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */,
-				764C7BCF2BA38A3B003EDBF9 /* userSelectedContacts.swift */,
-				764C7BC12BA38885003EDBF9 /* Item.swift */,
+				769B46EB2BAE10DA00069995 /* Funcs */,
+				760C08772BACBC1A00842842 /* Views */,
+				760C08762BACBC0A00842842 /* Classes */,
 				764C7BC32BA38888003EDBF9 /* Assets.xcassets */,
 				764C7BC52BA38888003EDBF9 /* Preview Content */,
 			);
@@ -96,12 +112,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		764C7BDB2BA4DD0A003EDBF9 /* MockData */ = {
+		769B46EB2BAE10DA00069995 /* Funcs */ = {
 			isa = PBXGroup;
 			children = (
-				764C7BD92BA4DCFE003EDBF9 /* CreateMockContacts.swift */,
+				769B46EC2BAE110300069995 /* getContactImage.swift */,
 			);
-			path = MockData;
+			path = Funcs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,13 +193,13 @@
 				764C7BD42BA38A85003EDBF9 /* scheduledCall.swift in Sources */,
 				764C7BD62BA38ABB003EDBF9 /* userSettings.swift in Sources */,
 				764C7BCE2BA38A23003EDBF9 /* userPreferences.swift in Sources */,
-				764C7BDA2BA4DCFE003EDBF9 /* CreateMockContacts.swift in Sources */,
 				76E87AF72BA83400008EB583 /* editSchedule.swift in Sources */,
 				76CA356F2BA828EB00B955B6 /* homeScreen.swift in Sources */,
 				76CA35712BA82DDD00B955B6 /* editFriendList.swift in Sources */,
+				769B46ED2BAE110300069995 /* getContactImage.swift in Sources */,
 				764C7BD22BA38A5E003EDBF9 /* callSchedule.swift in Sources */,
 				764C7BD02BA38A3B003EDBF9 /* userSelectedContacts.swift in Sources */,
-				764C7BC22BA38885003EDBF9 /* Item.swift in Sources */,
+				760C08752BACBB3D00842842 /* contactManager.swift in Sources */,
 				764C7BBE2BA38885003EDBF9 /* KyoseidenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
