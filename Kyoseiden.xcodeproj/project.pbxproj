@@ -11,12 +11,11 @@
 		764C7BBE2BA38885003EDBF9 /* KyoseidenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */; };
 		764C7BC42BA38888003EDBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764C7BC32BA38888003EDBF9 /* Assets.xcassets */; };
 		764C7BC72BA38888003EDBF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 764C7BC62BA38888003EDBF9 /* Preview Assets.xcassets */; };
-		764C7BCE2BA38A23003EDBF9 /* schedulePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BCD2BA38A23003EDBF9 /* schedulePreferences.swift */; };
 		764C7BD02BA38A3B003EDBF9 /* userSelectedContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BCF2BA38A3B003EDBF9 /* userSelectedContacts.swift */; };
-		764C7BD22BA38A5E003EDBF9 /* callSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */; };
-		764C7BD42BA38A85003EDBF9 /* scheduledCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */; };
 		764C7BD62BA38ABB003EDBF9 /* userSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764C7BD52BA38ABB003EDBF9 /* userSettings.swift */; };
 		769B46ED2BAE110300069995 /* getContactImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B46EC2BAE110300069995 /* getContactImage.swift */; };
+		769B46F12BB217D100069995 /* backgroundCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B46F02BB217D100069995 /* backgroundCall.swift */; };
+		769B46F32BB2183A00069995 /* triggerBackgroundCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B46F22BB2183A00069995 /* triggerBackgroundCall.swift */; };
 		76CA356F2BA828EB00B955B6 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA356E2BA828EB00B955B6 /* homeScreen.swift */; };
 		76CA35712BA82DDD00B955B6 /* editFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA35702BA82DDD00B955B6 /* editFriendList.swift */; };
 		76E87AF72BA83400008EB583 /* editSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E87AF62BA83400008EB583 /* editSchedule.swift */; };
@@ -28,12 +27,11 @@
 		764C7BBD2BA38885003EDBF9 /* KyoseidenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KyoseidenApp.swift; sourceTree = "<group>"; };
 		764C7BC32BA38888003EDBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		764C7BC62BA38888003EDBF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		764C7BCD2BA38A23003EDBF9 /* schedulePreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schedulePreferences.swift; sourceTree = "<group>"; };
 		764C7BCF2BA38A3B003EDBF9 /* userSelectedContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSelectedContacts.swift; sourceTree = "<group>"; };
-		764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = callSchedule.swift; sourceTree = "<group>"; };
-		764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduledCall.swift; sourceTree = "<group>"; };
 		764C7BD52BA38ABB003EDBF9 /* userSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSettings.swift; sourceTree = "<group>"; };
 		769B46EC2BAE110300069995 /* getContactImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getContactImage.swift; sourceTree = "<group>"; };
+		769B46F02BB217D100069995 /* backgroundCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backgroundCall.swift; sourceTree = "<group>"; };
+		769B46F22BB2183A00069995 /* triggerBackgroundCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = triggerBackgroundCall.swift; sourceTree = "<group>"; };
 		76CA35672BA635EC00B955B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		76CA356E2BA828EB00B955B6 /* homeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
 		76CA35702BA82DDD00B955B6 /* editFriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editFriendList.swift; sourceTree = "<group>"; };
@@ -55,10 +53,8 @@
 			isa = PBXGroup;
 			children = (
 				760C08742BACBB3D00842842 /* contactManager.swift */,
-				764C7BCD2BA38A23003EDBF9 /* schedulePreferences.swift */,
-				764C7BD12BA38A5E003EDBF9 /* callSchedule.swift */,
 				764C7BD52BA38ABB003EDBF9 /* userSettings.swift */,
-				764C7BD32BA38A85003EDBF9 /* scheduledCall.swift */,
+				769B46F02BB217D100069995 /* backgroundCall.swift */,
 				764C7BCF2BA38A3B003EDBF9 /* userSelectedContacts.swift */,
 			);
 			path = Classes;
@@ -116,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				769B46EC2BAE110300069995 /* getContactImage.swift */,
+				769B46F22BB2183A00069995 /* triggerBackgroundCall.swift */,
 			);
 			path = Funcs;
 			sourceTree = "<group>";
@@ -190,14 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764C7BD42BA38A85003EDBF9 /* scheduledCall.swift in Sources */,
 				764C7BD62BA38ABB003EDBF9 /* userSettings.swift in Sources */,
-				764C7BCE2BA38A23003EDBF9 /* schedulePreferences.swift in Sources */,
 				76E87AF72BA83400008EB583 /* editSchedule.swift in Sources */,
+				769B46F32BB2183A00069995 /* triggerBackgroundCall.swift in Sources */,
+				769B46F12BB217D100069995 /* backgroundCall.swift in Sources */,
 				76CA356F2BA828EB00B955B6 /* homeScreen.swift in Sources */,
 				76CA35712BA82DDD00B955B6 /* editFriendList.swift in Sources */,
 				769B46ED2BAE110300069995 /* getContactImage.swift in Sources */,
-				764C7BD22BA38A5E003EDBF9 /* callSchedule.swift in Sources */,
 				764C7BD02BA38A3B003EDBF9 /* userSelectedContacts.swift in Sources */,
 				760C08752BACBB3D00842842 /* contactManager.swift in Sources */,
 				764C7BBE2BA38885003EDBF9 /* KyoseidenApp.swift in Sources */,
