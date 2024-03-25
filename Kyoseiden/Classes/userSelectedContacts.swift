@@ -23,6 +23,7 @@ final class userSelectedContacts {
     let lastName: String
     var lastCalled: Date?
 
+    // this was so i can make a "hard copy" of all selected contacts and not just have a reference when searching i don't want to overwrite..
     func copy(with zone: NSZone? = nil) -> Any {
         let copy = userSelectedContacts(contactId: self.contactId, firstName: self.firstName, lastName: self.lastName, lastCalled: self.lastCalled)
         return copy

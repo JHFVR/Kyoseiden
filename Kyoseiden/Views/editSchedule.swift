@@ -7,15 +7,18 @@
 
 import Foundation
 import SwiftUI
+//import SwiftData
 
 struct editSchedule: View {
-    @Environment(\.dismiss) private var dismiss
-
-    @State private var callFrequency: CallFrequency = .daily
-    @State private var selectedDays: [DayOfWeek] = []
-    @State private var startTime = Calendar.current.date(bySettingHour: 8, minute: 0, second: 0, of: Date()) ?? Date()
-    @State private var endTime = Calendar.current.date(bySettingHour: 22, minute: 0, second: 0, of: Date()) ?? Date()
-
+    @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) var dismiss
+    
+//    @Query private var schedulePreferences: [schedulePreferences]
+    
+    @State private var callFrequency: CallFrequency = UserDefaultsManager.callFrequency ?? .daily
+    @State private var selectedDays: [DayOfWeek] = UserDefaultsManager.selectedDays ?? []
+    @State private var startTime = UserDefaultsManager.startTime ?? (Calendar.current.date(bySettingHour: 8, minute: 0, second: 0, of: Date()) ?? Date())
+    @State private var endTime = UserDefaultsManager.endTime ?? (Calendar.current.date(bySettingHour: 22, minute: 0, second: 0, of: Date()) ?? Date())
 
     var body: some View {
         NavigationView {
@@ -33,27 +36,85 @@ struct editSchedule: View {
                     TimePicker(title: "Latest Call Time", selectedTime: $endTime)
                         .padding(.horizontal)
 
-                    Button("Save") {
-                        // Save logic here
-                        // You can add an animation to confirm save
-                        dismiss()
-                    }
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .foregroundColor(.white)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                    .padding()
-                    
                     NoteBox()
-
+                        .padding()
                 }
                 .padding()
             }
             .navigationTitle("Scheduling")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Save") {
+                        UserDefaultsManager.callFrequency = callFrequency
+                        UserDefaultsManager.selectedDays = selectedDays
+                        UserDefaultsManager.startTime = startTime
+                        UserDefaultsManager.endTime = endTime
+                        dismiss()
+                    }
+                    .foregroundColor(.blue)
+                }
+            }
+        }        .onAppear {
+            // Load preferences when the view appears question marks are for detault values
+            callFrequency = UserDefaultsManager.callFrequency ?? .daily
+            selectedDays = UserDefaultsManager.selectedDays ?? []
+            startTime = UserDefaultsManager.startTime ?? (Calendar.current.date(bySettingHour: 8, minute: 0, second: 0, of: Date()) ?? Date())
+            endTime = UserDefaultsManager.endTime ?? (Calendar.current.date(bySettingHour: 22, minute: 0, second: 0, of: Date()) ?? Date())
+        }
+        Spacer()
+    }
+}
+        
+
+// Helper struct to manage UserDefaults operations
+struct UserDefaultsManager {
+    static let callFrequencyKey = "CallFrequency"
+    static let selectedDaysKey = "SelectedDays"
+    static let startTimeKey = "StartTime"
+    static let endTimeKey = "EndTime"
+    
+    static var callFrequency: CallFrequency? {
+        get {
+            guard let rawValue = UserDefaults.standard.string(forKey: callFrequencyKey) else { return nil }
+            return CallFrequency(rawValue: rawValue)
+        }
+        set {
+            UserDefaults.standard.set(newValue?.rawValue, forKey: callFrequencyKey)
+        }
+    }
+    
+    static var selectedDays: [DayOfWeek]? {
+        get {
+            guard let rawData = UserDefaults.standard.array(forKey: selectedDaysKey) as? [String] else { return nil }
+            return rawData.compactMap { DayOfWeek(rawValue: $0) }
+        }
+        set {
+            let rawValues = newValue?.map { $0.rawValue }
+            UserDefaults.standard.set(rawValues, forKey: selectedDaysKey)
+        }
+    }
+    
+    static var startTime: Date? {
+        get {
+            return UserDefaults.standard.object(forKey: startTimeKey) as? Date
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: startTimeKey)
+        }
+    }
+    
+    static var endTime: Date? {
+        get {
+            return UserDefaults.standard.object(forKey: endTimeKey) as? Date
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: endTimeKey)
         }
     }
 }
+
+
+
 
 struct NoteBox: View {
     var body: some View {

@@ -16,7 +16,7 @@ final class callSchedule {
         self.scheduledCalls = scheduledCalls
     }
 
-    func generateSchedule(userPreferences: userPreferences) {
+    func generateSchedule(userPreferences: schedulePreferences) {
         // Implementation for generating call schedule based on user preferences
     }
 
